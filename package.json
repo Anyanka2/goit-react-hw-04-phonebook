@@ -1,8 +1,8 @@
 {
-  "name": "goit-react-hw-03-phonebook",
+  "name": "goit-react-hw-04-phonebook",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Anyanka2.github.io/goit-react-hw-03-phonebook/",
+  "homepage": "https://Anyanka2.github.io/goit-react-hw-04-phonebook/",
   "dependencies": {
     "@csstools/normalize.css": "^12.0.0",
     "@emotion/styled": "^11.11.0",
