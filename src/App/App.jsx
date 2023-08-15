@@ -26,8 +26,8 @@ export const App = () => {
   const addContact = contact => {
     const isInContacts = contacts.some(
       ({ name, number }) =>
-        name.toLowerCase() === contact.name.toLowerCase().trim() ||
-        number === contact.number.trim()
+        name.toLowerCase() === contact.name.toLowerCase() ||
+        number === contact.number
     );
 
     if (isInContacts) {
@@ -43,14 +43,14 @@ export const App = () => {
     ]);
   };
   const changeFilter = event => {
-    setFilter(event.target.value.trim());
+    setFilter(event.target.value);
   };
   const getVisibleContacts = () => {
     const normalizedFilter = filter.toLowerCase();
 
     return contacts.filter(
       contact =>
-        contact.name.toLowerCase().includes(filter.toLowerCase()) ||
+        contact.name.toLowerCase().includes(normalizedFilter) ||
         contact.number.includes(normalizedFilter)
     );
   };
